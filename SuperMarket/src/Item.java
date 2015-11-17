@@ -4,7 +4,7 @@ public class Item {
 	private String Name;
 	private double Price;
 	private int BarCode;
-
+// constructors
 	public Item(int q, String prod, double p, int bc) {
 		// TODO Auto-generated constructor stub
 		setQuanity(q);
@@ -13,80 +13,64 @@ public class Item {
 		setBarCode(bc);
 	}
 
-	public Item(double p, String prod) {
+	public Item(int q, double p) {
 		// TODO Auto-generated constructor stub
-			setQuanity(0);
-			setName(prod);
-			setPrice(p);
-			setBarCode(0);
+		setQuanity(q);
+		setName("0");
+		setPrice(p);
+		setBarCode(0);
 	}
-
+// exceptions
 	void addQuanity(int q) {
-
+		Quanity += q;
 	}
 
 	void removeQuanity(int q) {
-
+		Quanity -= q;
 	}
-
-	void getQuanity(int q) {
-
+// getters setters
+	public int getQuanity() {
+		return Quanity;
 	}
 
 	private void setQuanity(int q) {
 		// TODO Auto-generated method stub
-
+		Quanity = q;
 	}
 
-	void addName(String prod) {
-
-	}
-
-	void removeName(String prod) {
-
-	}
-
-	void getName(String prod) {
-
+	public String getName() {
+		return Name;
 	}
 
 	private void setName(String prod) {
 		// TODO Auto-generated method stub
-
+		Name = prod;
 	}
 
 	void addPrice(double p) {
-
+		Price += p;
 	}
 
 	void removePrice(double p) {
-
+		Price -= p;
 	}
 
-	void getPrice(double p) {
-
+	public double getPrice() {
+		return Price;
 	}
 
 	private void setPrice(double p) {
 		// TODO Auto-generated method stub
-
+		Price=p;
 	}
 
-	void addBarcode(int bc) {
-
-	}
-
-	void removeBarcode(int bc) {
-
-	}
-
-	void getBarcode(int bc) {
-
+	public int getBarCode() {
+		return BarCode;
 	}
 
 	private void setBarCode(int bc) {
 		// TODO Auto-generated method stub
-
+		BarCode = bc;
 	}
 
 }
