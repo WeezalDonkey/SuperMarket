@@ -1,7 +1,7 @@
 
 public class Shopper {
 
-	public Shopper(int i, String quality) {
+	public Shopper(int i, ShopperType quality) {
 		// TODO Auto-generated constructor stub
 	}
 

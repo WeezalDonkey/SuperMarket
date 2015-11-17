@@ -1,6 +1,5 @@
 public class App { 
 
- 
 public static void main(String[] args) throws Exception { 
 		Supermarket hannaford = new Supermarket(); 
 		hannaford.addToStock(new Item(100, "organic carrot",  0.99, 121243)); 
@@ -39,5 +38,4 @@ public static void main(String[] args) throws Exception {
  		System.out.print(receipt2); 
 } 
 
- 
 } 

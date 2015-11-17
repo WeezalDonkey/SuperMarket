@@ -1,7 +1,6 @@
 
-public class ShopperType {
+public enum ShopperType {
 
-	public static final String Quality = null;
-	public static final String Price = null;
+	Quality, Price;
 
 }
