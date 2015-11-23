@@ -22,11 +22,11 @@ public class Item {
 	}
 // exceptions
 	void addQuanity(int q) {
-		Quanity += q;
+		if(q<=0) Quanity += q;
 	}
 
 	void removeQuanity(int q) {
-		Quanity -= q;
+		if(q<=0) Quanity -= q;
 	}
 // getters setters
 	public int getQuanity() {
