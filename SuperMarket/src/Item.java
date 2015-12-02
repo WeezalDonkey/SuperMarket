@@ -1,4 +1,3 @@
-
 public class Item {
 	private int Quanity;
 	private String Name;
@@ -13,20 +12,22 @@ public class Item {
 		setBarCode(bc);
 	}
 
-	public Item(int q, double p) {
+	public Item(int q, String name) {
 		// TODO Auto-generated constructor stub
 		setQuanity(q);
-		setName("0");
-		setPrice(p);
+		setName(name);
+		setPrice(0);
 		setBarCode(0);
 	}
 // exceptions
-	void addQuanity(int q) {
-		if(q<=0) Quanity += q;
+	public void addQuanity(int q) throws Exception{
+		if(q<=0) throw new Exception ("looking for positive quanity");
+		Quanity += q;
 	}
 
-	void removeQuanity(int q) {
-		if(q<=0) Quanity -= q;
+	public void removeQuanity(int q) throws Exception{
+		if(q<=0) throw new Exception ("looking for positive quanity");
+		Quanity -= q;
 	}
 // getters setters
 	public int getQuanity() {
